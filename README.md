@@ -37,21 +37,6 @@ Simple setup and supports deployment on Render
 
 ---
 
-## 📁 Project Structure
-
-```
-spam-email-detection-backend/
-│
-├── model.pkl           # Trained ML model
-├── vectorizer.pkl      # TF-IDF vectorizer
-├── app.py              # Main Flask application
-├── requirements.txt    # Project dependencies
-├── Procfile            # Deployment configuration (Render)
-└── README.md           # Project documentation
-```
-
----
-
 ## 📡 API Endpoint
 
 ### 🔹 Predict Spam Email
