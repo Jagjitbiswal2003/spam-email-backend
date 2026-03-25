@@ -1,69 +1,100 @@
-📧 Spam Email Detection Backend
-<p align="center"> 🚀 A Machine Learning powered API to classify emails as <b>Spam</b> or <b>Not Spam</b> </p> <p align="center"> <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python"/> <img src="https://img.shields.io/badge/Flask-Backend-black?style=for-the-badge&logo=flask"/> <img src="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange?style=for-the-badge"/> <img src="https://img.shields.io/badge/Deployment-Render-purple?style=for-the-badge"/> </p>
-✨ Overview
+# 📧 Spam Email Detection Backend
 
-This project is a Machine Learning-based backend system that detects whether an email is Spam 📩 or Not Spam ✅ using Natural Language Processing (NLP) techniques.
+A **Machine Learning–powered backend API** that detects whether an email is **Spam or Not Spam** using NLP techniques and a trained classification model.
 
-It provides a REST API that can be easily integrated with:
+Easily integrate with **React, mobile apps, or any frontend** to build a complete spam detection system.
 
-🌐 Web apps (React, Angular)
-📱 Mobile apps
-🧠 Other ML systems
-🚀 Features
+---
 
-✨ Smart & Efficient:
+## 🚀 Features
 
-🔍 Spam Detection using trained ML model
-⚡ Fast API Response with Flask
-📡 REST API Ready for seamless integration
-🧠 NLP-based Text Processing
-🛠 Lightweight & Easy Deployment (Render Supported)
-🏗️ Tech Stack
-Category	Technology Used
-⚙️ Backend	Flask
-💻 Language	Python
-🤖 ML Library	Scikit-learn
-🧠 NLP	NLTK / Text Processing
-☁️ Deployment	Render
-📁 Project Structure
+✨ **Smart Spam Detection**
+Detects spam emails using a trained ML model
+
+⚡ **Fast API Response**
+Built with Flask for quick and efficient processing
+
+📡 **REST API Ready**
+Easily connect with any frontend (React, Android, etc.)
+
+🧠 **NLP-Based Processing**
+Text cleaning, tokenization, and vectorization
+
+🛠 **Lightweight & Deployable**
+Simple setup and supports deployment on Render
+
+---
+
+## 🏗️ Tech Stack
+
+| Category       | Technology Used        |
+| -------------- | ---------------------- |
+| **Backend**    | Flask                  |
+| **Language**   | Python                 |
+| **ML Library** | Scikit-learn           |
+| **NLP**        | NLTK / Text Processing |
+| **Deployment** | Render                 |
+
+---
+
+## 📁 Project Structure
+
+```
 spam-email-detection-backend/
 │
-├── model.pkl              # 🧠 Trained ML model
-├── vectorizer.pkl         # 🔢 TF-IDF vectorizer
-├── app.py                 # 🚀 Main Flask application
-├── requirements.txt       # 📦 Dependencies
-├── Procfile               # ☁️ Render deployment config
-└── README.md              # 📄 Documentation
-📡 API Endpoint
-🔹 Spam Detection API
+├── model.pkl           # Trained ML model
+├── vectorizer.pkl      # TF-IDF vectorizer
+├── app.py              # Main Flask application
+├── requirements.txt    # Project dependencies
+├── Procfile            # Deployment configuration (Render)
+└── README.md           # Project documentation
+```
+
+---
+
+## 📡 API Endpoint
+
+### 🔹 Predict Spam Email
+
+**Endpoint:**
 POST /predict
-📥 Request Body
+
+### 📥 Request Body (JSON)
+
+```json
 {
   "email": "Congratulations! You have won a free lottery. Click now!"
 }
-📤 Response
+```
+
+### 📤 Response
+
+```json
 {
   "prediction": "Spam"
 }
-🌐 Live Deployment - Render 
+```
 
-🧠 How It Works
-1. Input email text is received via API
-2. Text is cleaned and preprocessed
-3. TF-IDF vectorizer transforms text into numerical format
-4. Trained ML model predicts:
-Spam
-Not Spam
-5. Result is returned as JSON response
+---
 
-📦 Dependencies
-Flask
-scikit-learn
-numpy
-pandas
-nltk
+## 🧠 How It Works
 
-👨‍💻 Author
+1. 📩 **Input Received**
+   Email text is sent via API request
 
-Jagjit Biswal
-🔗 GitHub: https://github.com/Jagjitbiswal2003
+2. 🧹 **Text Preprocessing**
+   Cleaning, removing stopwords, tokenization
+
+3. 🔢 **Feature Extraction**
+   TF-IDF vectorizer converts text → numerical format
+
+4. 🤖 **Prediction**
+   ML model classifies email as:
+
+   * Spam
+   * Not Spam
+
+5. 📤 **Response Returned**
+   Result sent back as JSON
+
+
