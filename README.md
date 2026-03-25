@@ -91,10 +91,10 @@ POST /predict
 4. 🤖 **Prediction**
    ML model classifies email as:
 
-   * Spam
-   * Not Spam
 
-5. 📤 **Response Returned**
-   Result sent back as JSON
 
+# 🌐 Render Deployment
+
+🚀 [View Live App](https://spam-email-backend-49b8.onrender.com)
+  
 
